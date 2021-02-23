@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  font-family: "Merriweather", serif;
+}
+
+body nav {
+  background-color: #9df3c4;
+  z-index: 5;
+}
+
+body nav ul {
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+}
+
+body nav ul li {
+  margin: 0 2rem;
+}
+
+body nav ul li a {
+  color: #1e2524;
+}
+
+body h1 {
+  padding: 3rem 3rem 0;
+  color: #1e2524;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+}
+
+body .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #4d4c4c;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: -1;
+}
+
+body .timeline .container {
+  border: inset #4d4c4c;
+  color: #1e2524;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  padding-top: 2rem;
+  position: relative;
+}
+
+body .timeline .container .content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .timeline .container .content .left {
+  max-width: 25%;
+  min-width: 20%;
+}
+
+body .timeline .container .content .left .whu-logo {
+  width: 90%;
+}
+
+body .timeline .container .content .left .ucsi-logo {
+  width: 100%;
+  padding-top: 1.7rem;
+  margin-right: 0.1rem;
+}
+
+body .timeline .container .content .left .utar-logo {
+  width: 100%;
+  padding-top: 1.7rem;
+}
+
+body .timeline .container .content .right button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #bdbaba;
+  color: #423f3f;
+  border: none;
+  margin: 0 1rem;
+}
+
+body .timeline .container .content .right button:hover {
+  background-color: #4d4c4c;
+}
+
+body .timeline .container .content .right button:active {
+  content: "-";
+}
+
+body .timeline .container .elaboration {
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+
+body .timeline .container .elaboration .description {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
+  max-width: 80%;
+}
+
+body .timeline .row {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body .timeline .row .col-lg-6 {
+  padding: 0 2rem;
+}
+
+body .timeline .row .circles {
+  position: absolute;
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 0.3rem;
+  border-color: #4d4c4c;
+}
+
+body .timeline .row .circle-1 {
+  top: 35%;
+  left: 97.3%;
+}
+
+body .timeline .row .circle-2 {
+  top: 40%;
+  left: -2.9%;
+}
+
+body .timeline .row .circle-3 {
+  bottom: 48%;
+  left: 97.3%;
+}
+
+@media screen and (max-width: 1110px) {
+  body h1 {
+    padding: 1rem;
+  }
+  body .timeline::after {
+    content: none;
+  }
+  body .timeline .row .container {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  body .timeline .row .circles {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles_education.css.map */

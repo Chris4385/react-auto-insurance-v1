@@ -1,0 +1,45 @@
+<%- include("partials/header") %>
+<body>
+    <div class="row">
+        <h1>Leave Your Message</h1>
+        <form class="col-lg-12 form-column" action="/contact" method="POST">
+        
+            <div class="row form-group">
+                <label for="name" class="col-lg-2 col-form-label">Name*</label>
+                <input name="sender" id="name" class="form-control col-lg-10" type="text" required>
+            </div>
+            <div class="row form-group">
+                <label for="email" class="col-lg-2 col-form-label">Email*</label>
+            <input name="senderEmail" id="email" class="form-control col-lg-10" type="email" required>
+            </div>
+            <div class="row form-group">
+                <label for="subject" class="col-lg-2 col-form-label">Subject</label>        
+                <input name="subject" type="text" id="subject" class="form-control col-lg-10">
+            </div>
+            <div class="row form-group">
+                <label  for="message" class="col-lg-2 col-form-label">Message*</label>
+            <textarea name="message" class="form-control  col-lg-10" id="Message" cols="30" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark btn-block">Submit</button>
+        
+
+        </form>
+    </div>
+</body>
+<%- include("partials/footer") %>
+<!-- Spared for responsive smaller screen -->
+<!-- <div  class="col-lg-8">
+    <form>
+    <div class="form-group">
+        <label for="name">Name*</label>
+        <input id="name" class="form-control" type="text" required>
+        <label for="email">Email*</label>
+        <input id="email" class="form-control" type="email" required>
+        <label for="subject">Subject</label>        
+        <input type="text" id="subject" class="form-control">
+        <label for="message">Message*</label>
+        <textarea class="form-control" id="Message" cols="30" rows="10" required></textarea>
+    </div>
+    <button class="btn btn-dark btn-block">Submit</button>
+    </form>
+</div> -->

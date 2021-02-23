@@ -1,0 +1,41 @@
+$normal_font: "Merriweather", serif;
+$artistic_font:'Redressed', cursive;
+
+$color1: rgb(245, 245, 245);
+$color2: rgb(189, 186, 186);
+$color3: rgb(77, 76, 76);
+$color4: #1e2524;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  font-family: $normal_font;
+nav{
+  background-color: #9df3c4;
+  z-index: 5;
+
+  ul{
+    font-weight: 900;
+    font-size: 20px;
+    font-family: $normal_font;
+
+    li {
+        margin:0 2rem;
+        a{
+          color:$color4;
+        }        
+    }
+}
+}
+}

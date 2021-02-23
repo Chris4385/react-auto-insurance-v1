@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  font-family: "Merriweather", serif;
+}
+
+body nav {
+  background-color: #9df3c4;
+  z-index: 5;
+}
+
+body nav ul {
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+}
+
+body nav ul li {
+  margin: 0 2rem;
+}
+
+body nav ul li a {
+  color: #1e2524;
+}
+
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Redressed", cursive;
+  color: #1e2524;
+  text-align: center;
+}
+
+body ul {
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+}
+
+body ul li {
+  margin: 0 2rem;
+}
+
+body .animation-box div {
+  border-radius: 50%;
+  background-color: #404041;
+  position: absolute;
+}
+
+body .animation-box div:nth-child(1) {
+  -webkit-animation: animate-middle-skewed-left 7s linear infinite;
+          animation: animate-middle-skewed-left 7s linear infinite;
+  height: 20px;
+  width: 20px;
+  left: 30%;
+  bottom: 40%;
+  opacity: 0.5;
+}
+
+body .animation-box div:nth-child(2) {
+  -webkit-animation: animate-bottom-vertical 8s linear infinite;
+          animation: animate-bottom-vertical 8s linear infinite;
+  height: 50px;
+  width: 50px;
+  left: 10%;
+  bottom: 10%;
+}
+
+body .animation-box div:nth-child(3) {
+  -webkit-animation: animate-bottom-vertical 8s infinite;
+          animation: animate-bottom-vertical 8s infinite;
+  height: 30px;
+  width: 30px;
+  right: 10%;
+  bottom: 10%;
+}
+
+body .animation-box div:nth-child(4) {
+  -webkit-animation: animate-middle-skewed-right 7s linear infinite;
+          animation: animate-middle-skewed-right 7s linear infinite;
+  height: 20px;
+  width: 20px;
+  top: 60%;
+  right: 20%;
+}
+
+body .animation-box div:nth-child(5) {
+  -webkit-animation: animate-bottom-skewed 11s linear infinite;
+          animation: animate-bottom-skewed 11s linear infinite;
+  height: 50px;
+  width: 50px;
+  left: 70%;
+  bottom: 10%;
+}
+
+body .animation-box div:nth-child(6) {
+  -webkit-animation: animate-middle-skewed-right 9s infinite;
+          animation: animate-middle-skewed-right 9s infinite;
+  height: 50px;
+  width: 50px;
+  left: 30%;
+  bottom: 40%;
+}
+
+body .animation-box div:nth-child(7) {
+  -webkit-animation: animate-middle-skewed-left 6s linear infinite;
+          animation: animate-middle-skewed-left 6s linear infinite;
+  height: 50px;
+  width: 50px;
+  right: 30%;
+  bottom: 20%;
+}
+
+body .description-box {
+  line-height: 1;
+}
+
+body .description-box .name {
+  padding-top: 11%;
+  font-size: 5rem;
+  font-style: italic;
+}
+
+body .description-box .description {
+  font-size: 3rem;
+}
+
+body .description-box a {
+  display: inline-block;
+  color: #1e2524;
+  margin: 3% 3% 3% 5%;
+}
+
+body .description-box a i {
+  font-size: 2.5rem;
+}
+
+@-webkit-keyframes animate-bottom-vertical {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scaleX(1.5) scaleY(1.5) translateY(-400px);
+            transform: scaleX(1.5) scaleY(1.5) translateY(-400px);
+    opacity: 0.2;
+    background-color: #fff;
+  }
+}
+
+@keyframes animate-bottom-vertical {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scaleX(1.5) scaleY(1.5) translateY(-400px);
+            transform: scaleX(1.5) scaleY(1.5) translateY(-400px);
+    opacity: 0.2;
+    background-color: #fff;
+  }
+}
+
+@-webkit-keyframes animate-bottom-skewed {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scaleX(1.5) scaleY(1.5) translateX(-30px) translateY(-800px);
+            transform: scaleX(1.5) scaleY(1.5) translateX(-30px) translateY(-800px);
+    opacity: 0.2;
+    background-color: #fff;
+  }
+}
+
+@keyframes animate-bottom-skewed {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scaleX(1.5) scaleY(1.5) translateX(-30px) translateY(-800px);
+            transform: scaleX(1.5) scaleY(1.5) translateX(-30px) translateY(-800px);
+    opacity: 0.2;
+    background-color: #fff;
+  }
+}
+
+@-webkit-keyframes animate-middle-skewed-right {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scaleX(1.5) scaleY(1.5) translateX(50px) translateY(-300px);
+            transform: scaleX(1.5) scaleY(1.5) translateX(50px) translateY(-300px);
+    opacity: 0.2;
+    background-color: #fff;
+  }
+}
+
+@keyframes animate-middle-skewed-right {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scaleX(1.5) scaleY(1.5) translateX(50px) translateY(-300px);
+            transform: scaleX(1.5) scaleY(1.5) translateX(50px) translateY(-300px);
+    opacity: 0.2;
+    background-color: #fff;
+  }
+}
+
+@-webkit-keyframes animate-middle-skewed-left {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scaleX(1.5) scaleY(1.5) translateX(-100px) translateY(-400px);
+            transform: scaleX(1.5) scaleY(1.5) translateX(-100px) translateY(-400px);
+    opacity: 0.2;
+    background-color: #fff;
+  }
+}
+
+@keyframes animate-middle-skewed-left {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scaleX(1.5) scaleY(1.5) translateX(-100px) translateY(-400px);
+            transform: scaleX(1.5) scaleY(1.5) translateX(-100px) translateY(-400px);
+    opacity: 0.2;
+    background-color: #fff;
+  }
+}
+
+body section {
+  margin-top: 5rem;
+}
+
+body section h1 {
+  background-color: #d7fbe8;
+  padding: 1rem;
+  color: black;
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+body section h1 i {
+  margin-right: 1rem;
+  color: #4d4c4c;
+}
+
+body section .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body section .timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: #2e2e2e;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: -1;
+}
+
+body section .timeline .container {
+  color: #1e2524;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  padding-top: 2rem;
+  position: relative;
+}
+
+body section .timeline .container .content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body section .timeline .container .content .left {
+  max-width: 25%;
+  min-width: 20%;
+}
+
+body section .timeline .container .content .left .whu-logo {
+  width: 90%;
+}
+
+body section .timeline .container .content .left .ucsi-logo {
+  width: 100%;
+  padding-top: 1.7rem;
+  margin-right: 0.1rem;
+}
+
+body section .timeline .container .content .left .utar-logo {
+  width: 100%;
+  padding-top: 1.7rem;
+}
+
+body section .timeline .container .content .right button {
+  display: block;
+  width: 100%;
+  background: none;
+  color: #423f3f;
+  border: none;
+  margin: 0 1rem;
+  outline: none;
+}
+
+body section .timeline .container .content .right button:hover {
+  background-color: grey;
+}
+
+body section .timeline .container .content .right button:active {
+  content: "-";
+}
+
+body section .timeline .container .content .right .year {
+  font-weight: 900;
+  font-family: 'Cinzel', serif;
+}
+
+body section .timeline .container .content .right p {
+  font-size: 1.3rem;
+}
+
+body section .timeline .container .elaboration {
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+
+body section .timeline .container .elaboration .description {
+  font-family: "Redressed", cursive;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
+  max-width: 80%;
+  font-weight: 700;
+}
+
+body section .timeline .container .elaboration .description p, body section .timeline .container .elaboration .description li {
+  font-family: "Redressed", cursive;
+}
+
+body section .timeline .row {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body section .timeline .row .col-lg-6 {
+  padding: 0 2rem;
+}
+
+body section .timeline .row .circles {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+body section .timeline .row .circle-1 {
+  top: 35%;
+  left: 99%;
+}
+
+body section .timeline .row .circle-2 {
+  top: 40%;
+  left: -1%;
+}
+
+body section .timeline .row .circle-3 {
+  bottom: 48%;
+  left: 99%;
+}
+
+@media screen and (max-width: 1110px) {
+  body section h1 {
+    padding: 1rem;
+  }
+  body section .timeline::after {
+    content: none;
+  }
+  body section .timeline .row .container {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+  body section .timeline .row .circles {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,97 @@
+@import "sassPartials/backgroundSetting";
+body{
+    text-align: center;
+
+    .col-lg-2{
+        font-family: $artistic_font;
+        font-size: 3rem;
+        color:$color4;
+        padding: 5rem 1rem 0 0;
+
+
+    }
+    h4{
+        font-family: 'Cinzel', serif;
+        color:$color4;
+        padding:1rem 0;
+        background-color:$color1;
+        border-radius: 2rem;
+    }
+    hr{
+        border:none;
+        border-top:dotted;
+        border-width: 0.5rem;
+        width:10%;
+        margin: auto;
+        border-color: gray;
+        margin-top:4rem;
+        margin-bottom: 4rem;
+    }
+    .row{
+        margin:2rem auto;
+        max-width:95%;
+
+        .skills{
+            text-align: left;
+            display: flex;
+            justify-content: space-around;
+            p{
+                color: $color4;
+                &.fields{
+                    font-family: $normal_font;
+                    font-weight: 900;
+                    font-size: 1rem;
+
+                }
+            }
+            div{
+                max-width: 30%;
+            }
+        }
+      
+    }
+    @media screen and (max-width:987px){
+        .col-lg-2{
+            padding:0;
+        }
+    }
+    ////////////////////////////Project Section/////////////////////////
+    .project-section{
+        padding-bottom: 5rem;
+
+        .project-title{
+            background-color: #d7fbe8;
+            padding: 1rem;
+            color: $color4;
+            font-family: 'Cinzel', serif;
+            font-weight: 900;
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+            color: black;
+        }
+        h5{
+            font-family: $artistic_font;
+            font-size: 1.5rem;
+        }
+        .carousel{
+            margin-left: auto;
+            margin-right:auto ;
+            width: 60%;
+
+            .images{
+                min-width: 100%;
+                max-width:90%;
+            }
+            h5{
+                color:$color4;
+            }
+            .project-description{
+                color:$color3
+            }
+            .simonGameH5{
+                color: #fff;
+            }
+
+        }
+    }
+}

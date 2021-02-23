@@ -1,0 +1,31 @@
+@import "sassPartials/backgroundSetting";
+
+body{
+    .row{
+        margin-left:auto;
+        margin-right: auto;
+        min-width:20%;
+        max-width:80%;
+        // border: solid;
+        h1{
+            margin:2rem;
+            color:$color4;
+            font-family: $artistic_font;
+        }
+        .form-column{
+            padding:1rem ;
+            font-size: large;
+            color:$color4;
+            .col-form-label{
+                line-height: 1.8;
+            }
+            .form-control{
+                line-height: 2;
+            }
+            button{
+                width: 80%;
+                margin:1rem auto;
+            }
+        }
+    }
+}

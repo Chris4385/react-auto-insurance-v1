@@ -1,0 +1,126 @@
+<%- include("partials/header") -%>
+
+<body>
+  <div class="row">
+    <h1 class="col-lg-2">Languages</h1>
+    <div class="col-lg-5">
+      <h4>Main Languages</h4>
+      <div class="skills">
+        <div class="main-languages">
+            <p class="fields">Chinese</p>
+            <p class="fields">English</p>
+            <p class="fields">Malay</p>  
+          </div>
+          <div class="main-languages-rating">
+              <p><%- include("partials/stars",{rating:5}) %></p>
+              <p><%- include("partials/stars",{rating:4}) %></p>
+              <p><%- include("partials/stars",{rating:3}) %></p>
+          </div>
+      </div>
+      
+    </div>
+    <div class="col-lg-5">
+      <h4>Additional Spoken Dialects</h4>
+      <div class="skills">
+        <div class="dialects">
+            <p class="fields">Cantonese</p>
+            <p class="fields">Hokkien</p>
+            </div>
+            <div class="dialects-rating">
+              <p><%- include("partials/stars",{rating:5}) %></p>
+              <p><%- include("partials/stars",{rating:3}) %></p>
+      
+            </div>
+      </div>
+      
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <h1 class="col-lg-2">Skills</h1>
+    <div class="front-end col-lg-5">
+      <h4>Front-End</h4>
+      <div class="skills">
+        <div class="front-end-skills">
+          <p class="fields">HTML5/EJS</p>
+          <p class="fields">SCSS/SASS/Bootstrap</p>
+          <p class="fields">JavaScript/jQuery</p>
+        </div>
+        <div class="front-end-rating">
+            <p><%- include("partials/stars",{rating:4}) %></p>
+            <p><%- include("partials/stars",{rating:4}) %></p>
+            <p><%- include("partials/stars",{rating:3}) %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="back_end col-lg-5">
+      <h4>Back-End</h4>
+      <div class="skills">
+          <div class="back-end-skills">
+            <p class="fields">Node.js/Express.js</p>
+            <p class="fields">MongoDB/Mongoose</p>
+          </div>
+          <div class="back-end-rating">
+            <p><%- include("partials/stars",{rating:3}) %></p>
+            <p><%- include("partials/stars",{rating:3}) %></p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <section class="project-section">
+    <h1 class="project-title">Projects</h1>
+    <h5>Click on the corresponding to explore further on the projects</h5>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://quiet-wildwood-44233.herokuapp.com/" target="_blank">
+            <img class="images dailyJounralImage" src="images/dailyJournal.png" alt="First slide">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Daily Journal</h5>
+            <p class="project-description">An authenticated Node.js application to record daily journal.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="https://guarded-caverns-80557.herokuapp.com/" target="_blank">
+            <img class="images todolistImages" src="images/todolist.png" alt="Second slide">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Daily ToDoList</h5>
+            <p class="project-description">A daily todolist designed using Express.js & MongoDB.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="https://chris4385.github.io/secondProject/index.html" target="_blank">
+            <img class="images simonGameImages" src="images/simonGame.png" alt="Third slide">
+
+          </a>
+          <div class="carousel-caption d-none d-md-block simonGame">
+            <h5 class="simonGameH5">Simon Game</h5>
+            <p class="simonGamep">A static Simon Game designed using only jQuery & JavaScript.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<%- include("partials/footer") -%>

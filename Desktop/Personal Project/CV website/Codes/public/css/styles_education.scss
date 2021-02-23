@@ -1,0 +1,142 @@
+@import "sassPartials/backgroundSetting";
+
+body {
+  h1 {
+    padding: 3rem 3rem 0;
+    color: $color4;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      background-color: $color3;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+    }
+
+    .container {
+      border:inset $color3;
+      color: $color4;
+      margin: 2rem 0;
+      border-radius: 0.5rem;
+      padding-top: 2rem;
+      position: relative;
+
+      .content {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+
+        .left {
+          max-width: 25%;
+          min-width: 20%;
+
+          .whu-logo {
+            width: 90%;
+          }
+          .ucsi-logo {
+            width: 100%;
+            padding-top: 1.7rem;
+            margin-right: 0.1rem;
+          }
+          .utar-logo {
+            width: 100%;
+            padding-top: 1.7rem;
+          }
+        }
+        .right {
+          button {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background-color: $color2;
+            // font-size: 25px;
+            color: rgb(66, 63, 63);
+            border: none;
+            margin: 0 1rem;
+            &:hover {
+              background-color: $color3;
+            }
+            &:active{
+              content: "-";
+            }
+          }
+        }
+      }
+      .elaboration {
+        margin: auto;
+        text-align: center;
+        display: none;
+        .description {
+          text-align: left;
+          margin-left: auto;
+          margin-right: auto;
+          min-width:50%;
+          max-width:80%;
+        }
+      }
+    }
+    .row {
+      position:relative;
+      margin: 0;
+      padding: 0;
+      .col-lg-6 {
+        // border: solid;
+        padding: 0 2rem;
+      }
+
+      .circles {
+        position: absolute;
+        content: "";
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #fff;
+        border-style: solid;
+        border-radius: 50%;
+        border-width: 0.3rem;
+        border-color: $color3;
+      }
+      .circle-1 {
+        top: 35%;
+        left: 97.3%;
+      }
+      .circle-2 {
+        top: 40%;
+        left: -2.9%;
+      }
+      .circle-3 {
+        bottom: 48%;
+        left: 97.3%;
+      }
+    }
+  }
+  @media screen and (max-width: 1110px) {
+    h1{
+      padding:1rem;
+    }
+    .timeline {
+      &::after {
+        content: none;
+      }
+      .row {
+        .container {
+          padding: 1rem;
+          margin: 1rem auto;
+        }
+        .circles {
+          display: none;
+        }
+
+      }
+    }
+  }
+}
